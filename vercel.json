@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name" : "doctorApp_backend",
+    "name" : "doctor-app-backend1",
     "builds" : [
         {
             "src" : "index.js",
