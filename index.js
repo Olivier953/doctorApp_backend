@@ -1,18 +1,18 @@
-const express = require("express")
 const dotenv = require('dotenv')
 dotenv.config()
+
+const express = require("express")
+const app = express()
+
 const cors = require("cors")
 const { mongoose } = require("mongoose")
-const app = express()
-app.use(express.json())
-const userRoute = require("./routes/userRoute")
-const adminRoute = require("./routes/adminRoute")
-const doctorRoute = require("./routes/doctorRoute")
-app.use(cors())
 
-app.use("/user", userRoute)
-app.use("/admin", adminRoute)
-app.use("/doctor", doctorRoute)
+app.use(cors({ origin: '*' }));
+app.use(express.json())
+
+app.use("/user", require("./routes/userRoute"))
+app.use("/admin", require("./routes/adminRoute"))
+app.use("/doctor", require("./routes/doctorRoute"))
 
 mongoose.connect(process.env.MONGO_URL)
 .then(() => console.log("connected to mongoDB"))
