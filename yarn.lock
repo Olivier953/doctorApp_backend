@@ -786,10 +786,10 @@ node-fetch@^2.6.7:
   dependencies:
     whatwg-url "^5.0.0"
 
-node@^14.20.1:
-  version "14.20.1"
-  resolved "https://registry.npmjs.org/node/-/node-14.20.1.tgz"
-  integrity sha512-X+ds8FIkd5O+o6uuZKjP8ONH64PN8B+bsR2atkyx5anwruCPRyqHQRFQzG80Ymxv/lptRm3emXvvVpiMLl2qLg==
+node@^14.21.3:
+  version "14.21.3"
+  resolved "https://registry.npmjs.org/node/-/node-14.21.3.tgz"
+  integrity sha512-58OWd3tZhyABy+OwPGawVKmK5tvlM5Z0TATCSLsiVcIp7NFvMahhzABSkBlnvyiISGcxmainzEAv7L9YJI5EMw==
   dependencies:
     node-bin-setup "^1.0.0"
 
